@@ -4,7 +4,7 @@
 #include "HX711.h"
 
 #define SCREEN_WIDTH 128 // OLED width,  in pixels
-#define SCREEN_HEIGHT 64 // OLED height, in pixels
+#define SCREEN_HEIGHT 32 // OLED height, in pixels
 const int GAIN = 128; //Folgende Verstärkungen sind möglich: 32, 64, 128
 const float MESSWERTE = 1; //Anzahl der Messwerte (wirkt als gleitender Mittelwert / Hochpass)
 const float FAKTOR = 420; //Skalierung ADC Wert zu Kraft (ADC Wert / Kraft)

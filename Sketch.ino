@@ -1,5 +1,5 @@
 /*
-https://wokwi.com/projects/388281502876573697
+https://wokwi.com/projects/388329161869998081
 */
 #include <Wire.h>
 #include <Adafruit_GFX.h>
@@ -38,7 +38,6 @@ void setup() {
   oled.setCursor(0, 10);       // set position to display
   oled.println("JanWarHier"); // set text
   oled.display();              // display on OLED
-  Serial.println(F("SetupDone"));
 }
 float MaxValue = 0.0;
 bool debug = false;
@@ -87,7 +86,7 @@ void loop() {
     }else{
         oled.print(value,3); // set text
         oled.println("Kg"); // set text
-        oled.println("NoMaxValueSet");
+        oled.println("NoMaxValueSet\nPressButton");
     }
   }
   oled.display();   

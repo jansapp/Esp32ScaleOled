@@ -53,6 +53,7 @@ void loop() {
     oled.print(value,3); // set text
     oled.println("Kg"); // set text
   }
+
   if(value<MaxValue)
   {
     oled.setTextSize(2);         // set text size
@@ -72,10 +73,16 @@ void loop() {
       else
       {
         oled.setTextSize(2);         // set text size
-        oled.println("New Coffe PLZ");
+        oled.println("PLZ make\n new Coffe");
       }
-  }else{
-    
+  }
+  else if(value>MaxValue)
+  {
+        oled.setTextSize(2);         // set text size
+        oled.println("Mhhh new\n Coffe");
+  }
+  else
+  {    
     if(MaxValue > 0.0){
       if(debug)
       {
@@ -83,6 +90,7 @@ void loop() {
         oled.print(MaxValue,3); // set text
         oled.println("Kg"); // set text
       }
+        oled.println("Full lets go"); // set text
     }else{
         oled.print(value,3); // set text
         oled.println("Kg"); // set text
